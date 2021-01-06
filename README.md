@@ -11,3 +11,4 @@ One of the only RP Clients with clickable buttons (you cant click buttons on you
 - then do `npm install` to install the npm packages from package.json
 - then do `node rpc.js` to run the RPC, (u can also use pm2, forever, nodemon)<br/>
 Tested on KDE neon, Manjaro, Ubuntu, Windows 10/7 (should work on mac too)
+Thanks to AliTheKing#9129 for helping
