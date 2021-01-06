@@ -9,6 +9,10 @@ client.on('ready', () => {
         activity: {
             details: `Upper Text`,
             state: 'Lower Text',
+            assets : {
+                large_image : "image_key",
+                large_text : "Custom text" // this is shown when hovered over the image
+            },
             buttons: [
                 { label: 'Button 1', url: 'URL 1' },
                 { label: 'Button 2', url: 'URL 2' }
