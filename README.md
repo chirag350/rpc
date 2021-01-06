@@ -1,7 +1,7 @@
 # Discord Rich Presence Client in Node.js
 One of the only RP Clients with clickable buttons (you cant click buttons on your own profile) using the NPM package `@discordjs/discord-rpc`
 # Setting up
-- Install [nodejs](nodejs.org), any version higher than 12.0.0 will work (tested on v12.20.0)
+- Install [nodejs](nodejs.org), idk why but ONLY node v12 works 
 - Clone this repo on your local machine
 - open rpc.js in a code editor/notepad
 - edit the things u want
