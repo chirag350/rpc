@@ -1,17 +1,16 @@
 const RPC = require('discord-rpc')
-const clientId = 'put client id here'; // replace with yours
 const client = new RPC.Client({ transport: 'ipc' });
-
+const config = require('./config.js')
 client.on('ready', () => {
 
     client.request('SET_ACTIVITY', {
         pid: process.pid,
         activity: {
-            details: `Upper Text`,
-            state: 'Lower Text',
+            details: config.LOWER_TEXT,
+            state: config.LOWER_TEXT,
             buttons: [
-                { label: 'Button 1', url: 'URL 1' },
-                { label: 'Button 2', url: 'URL 2' }
+                { label: config.BUTTON_1_TEXT, url: config.BUTTON_1_URL },
+                { label: config.BUTTON_2_TEXT, url: config.BUTTON_2_URL }
             ]
         }
     })
@@ -19,4 +18,4 @@ client.on('ready', () => {
     console.log('RPC has started!')
 })
 
-client.login({ clientId });
+client.login(config.CLIENT_ID);
