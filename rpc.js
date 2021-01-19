@@ -35,7 +35,7 @@ client.on('ready', () => {
     console.log(`\x1b[37m`)
     console.log(`\x1b[32m==========================================`)
     console.log(`\x1b[33m   ClientID: ${config.CLIENT_ID}`)
-    console.log(`\x1b[33m   Author: Chirag.#0001 or Chirag.#0888`)
+    console.log(`\x1b[33m   Author: Chirag.#7840`)
     console.log(`\x1b[32m==========================================`)
     console.log(`\x1b[32m   Upper Text: ${config.UPPER_TEXT} Lower Text: ${config.LOWER_TEXT}`)
     console.log(`\x1b[32m   Button 1: Text: ${config.BUTTON_1_TEXT} URL: ${config.BUTTON_1_URL}`)
