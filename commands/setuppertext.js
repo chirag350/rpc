@@ -3,13 +3,13 @@ const db = require('quick.db')
 const config = require('../config.js')
 module.exports = {
     name: "setuppertext",
-    description: "set the upper text of ur rpc",
+    description: "Set the upper text or details section of your rpc.",
 
 
     async execute(client, message, args) {
         if (!args[0]) return message.channel.send("Please enter a text\n Usage: `setuppertext your text here`")
         let text = args.join(" ")
-        if (text.length <= 2) return message.channel.send('Invalid length, make sure its above 2 charecters') 
+        if (text.length <= 2) return message.channel.send('Invalid length, make sure its above 2 characters') 
         db.set(`detail_${message.author.id}`, text)
         let details = await db.fetch(`detail_${message.author.id}`)
         if (!details || details === 'null') details = config.UPPER_TEXT
@@ -33,3 +33,4 @@ module.exports = {
         })
     }
 };
+
