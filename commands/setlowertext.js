@@ -3,7 +3,7 @@ const db = require('quick.db')
 const config = require('../config.js')
 module.exports = {
     name: "setlowertext",
-    description: "set the lower text of ur rpc",
+    description: "Set the lower text or state section of your rpc.",
 
 
     async execute(client, message, args) {
@@ -33,3 +33,4 @@ module.exports = {
         })
     }
 };
+

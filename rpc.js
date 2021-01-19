@@ -69,3 +69,4 @@ bot.on("message", async message => {
 
 client.login({ clientId });
 bot.login(config.TOKEN)
+
